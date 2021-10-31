@@ -7,9 +7,9 @@ const Navbar = () => {
 
     return (
         <div className="flex">
-<div className="fixed z-40 w-10/12">
-            <div className={`bg-gray-200 h-screen   ${isOpen ? 'block' : 'hidden'}`}>
-                
+            <div className="fixed z-40 w-10/12">
+                <div className={`bg-gray-200 h-screen   ${isOpen ? 'block' : 'hidden'}`}>
+
                     <div className="flex ">
                         <button className="bg-gray-500  hover:bg-green-500 py-5">Menu</button>
                         <button className="bg-gray-500  hover:bg-green-500 py-5">Account</button>
@@ -21,8 +21,8 @@ const Navbar = () => {
                         <li>Home</li>
                         <li>Home</li>
                     </ul>
-               
-            </div>
+
+                </div>
             </div>
             <nav className="bg-green-500 p-5 flex-1">
                 <div className="container">
@@ -34,14 +34,13 @@ const Navbar = () => {
 
                         <div className={`flex space-x-10 ${isOpen ? 'hidden' : 'block'}`}>
                             <div className="sm:hidden md:block">
-                                <ul className="flex space-x-3 md:space-x-3 lg:space-x-8  text-white text-base ">
-                                    <li className=""><a className="hover:text-gray-600" href="#">Home</a></li>
-                                    <li className=""><a className="hover:text-gray-600" href="#">Touring Bikes</a></li>
-                                    <li className=""><a className="hover:text-gray-600" href="#">Bicycle</a></li>
-                                    <li className=""><a className="hover:text-gray-600" href="#">Road Bikes</a></li>
-                                    <li className=""><a className="hover:text-gray-600" href="#">Cycle Pumps</a></li>
-                                    <li className=""><a className="hover:text-gray-600" href="#">Blog</a></li>
-                                </ul>
+                                <div className="flex space-x-3 md:space-x-3 lg:space-x-8  text-white text-base ">
+                                    <a className="hover:text-gray-600" href="#">Home</a>
+                                    <a className="hover:text-gray-600" href="#">Touring Bikes</a>
+                                    <a className="hover:text-gray-600" href="#">Bicycle</a>
+                                    <a className="hover:text-gray-600" href="#">Road Bikes</a>
+                                    <a className="hover:text-gray-600" href="#">Blog</a>
+                                </div>
                             </div>
                             <ul className="flex space-x-5 text-xl items-center justify-center">
                                 <li><FontAwesomeIcon className="cursor-pointer " icon={faSearch} /></li>
