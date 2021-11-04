@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
+import Navbar from '../Navigation/Navbar/Navbar';
 
 const Home = () => {
     return (
         <>
-            <Navbar></Navbar>
+            <Navbar/>
             <h1>this is home</h1>
         </>
     );
