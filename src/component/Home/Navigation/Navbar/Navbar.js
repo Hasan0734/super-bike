@@ -14,7 +14,7 @@ const Navbar = () => {
 
             {/* mobile menu */}
 
-            <div className={`bg-green-500 fixed  w-11/12 min-h-screen  ${isOpen ? 'block' : 'hidden'}`}>
+            <div className={`bg-green-500 fixed  w-11/12 min-h-screen z-50 ${isOpen ? 'block' : 'hidden'}`}>
                 <MobileMenu></MobileMenu>
             </div>
 
@@ -39,7 +39,7 @@ const Navbar = () => {
                         {/* secondary nav */}
 
                         <div className={`${isOpen ? 'hidden' : 'block'} flex items-center space-x-3 `}>
-                            <SecondaryNav/>
+                            <SecondaryNav />
                         </div>
 
 

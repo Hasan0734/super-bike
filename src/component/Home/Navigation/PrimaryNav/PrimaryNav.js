@@ -12,8 +12,8 @@ const PrimaryNav = () => {
                 <li className="relative dropdown py-5">
                     <a className="py-5 px-2 hover:text-gray-600 " href="#">Touring Bikes</a>
 
-                    <ul className="flex absolute hidden dropdown-menu  w-96 p-2 left-3 top-16 bg-gray-100 space-x-6">
-                        <SubMenu/>
+                    <ul className="flex absolute hidden dropdown-menu z-50  w-96 p-2 left-3 top-16 bg-gray-100 space-x-6">
+                        <SubMenu />
                     </ul>
                 </li>
 
