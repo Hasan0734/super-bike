@@ -9,11 +9,11 @@ const SecondaryNav = () => {
         <>
             <ul className="flex space-x-5 text-xl items-center justify-center">
                 <li className="space-x-2 flex items-center justify-center">
-                    <input className="rounded-md focus:outline-none px-3 py-1 text-sm"
+                    <input className="rounded-md  focus:outline-none px-3 py-1 text-sm"
                         placeholder="Search" type="text" />
                     <button className="hover:text-white"><FontAwesomeIcon  icon={faSearch} /></button></li>
 
-                <li className="relative sm:hidden md:block account-drop hover:text-white py-5"><FontAwesomeIcon className="cursor-pointer" icon={faUserAlt} />
+                <li className="relative hidden md:block account-drop hover:text-white py-5"><FontAwesomeIcon className="cursor-pointer" icon={faUserAlt} />
                     <div className="divide-y-2 divide-gray-400 z-50 divide-dashed bg-gray-100 hidden account-drop-menu absolute p-2 -left-36 top-16 w-48">
                         <ul className="sm:text-white md:text-black pb-4 ">
                             <AccountMenu />

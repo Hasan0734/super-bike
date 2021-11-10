@@ -22,19 +22,9 @@
     transition-duration: 0.6s;
   }
   
-  .owl-next {
-    margin-right: -50px !important;
-    color: white !important;
-  }
-  
-  .owl-prev {
-    margin-left: -50px !important;
-    color: white !important;
-  
-  }
-  .owl-carousel:hover .owl-prev{
+  .owl-carousel .owl-prev{
   margin-left: 30px !important;
   }
-  .owl-carousel:hover .owl-next{
+  .owl-carousel .owl-next{
     margin-right: 30px !important;
   }

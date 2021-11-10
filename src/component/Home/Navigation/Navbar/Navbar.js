@@ -24,10 +24,10 @@ const Navbar = () => {
                         <div className="flex space-x-4 ">
                             <div className='flex space-x-3 items-center py-4'>
                                 {/* menu button */}
-                                <button onClick={() => setIsOpen(!isOpen)} className="md:hidden sm:block text-2xl font-bold text-white py-1"><FontAwesomeIcon icon={faBars} /></button>
+                                <button onClick={() => setIsOpen(!isOpen)} className="md:hidden sm:block text-2xl font-semibold text-white py-1"><FontAwesomeIcon icon={faBars} /></button>
 
                                 {/* logo */}
-                                <span className={`${isOpen ? 'hidden' : 'block'} text-2xl font-bold text-white`} href="#">
+                                <span className={`${isOpen ? 'hidden' : 'block'} text-2xl font-semibold text-white`} href="#">
                                     <FontAwesomeIcon className="text-black" icon={faBiking} /> Super Bike</span>
                             </div>
                         </div>
