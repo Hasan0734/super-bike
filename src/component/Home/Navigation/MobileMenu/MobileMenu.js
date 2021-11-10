@@ -44,13 +44,13 @@ const MobileMenu = () => {
 
                 {/* Account  */}
                 <div className={` ${openTab === 2 ? 'block' : 'hidden'}`}>
-                    <ul className="sm:text-white md:text-black">
+                    <ul className="text-white sm:text-black">
                         <AccountMenu />
                     </ul>
                 </div>
                 {/* Language */}
                 <div className={`${openTab === 3 ? 'block' : 'hidden'}`}>
-                    <ul className="sm:text-white md:text-black">
+                    <ul className="text-white sm:text-black">
                         <Language />
                     </ul>
                 </div>
