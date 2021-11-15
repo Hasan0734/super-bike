@@ -9,11 +9,11 @@ const SecondaryNav = () => {
     console.log(searchBox)
     return (
         <>
-            <ul className="flex space-x-5 text-xl items-center justify-center">
-                <li className={``} >
-                      <input className={`rounded-md absolute right-16 top-6 sm:static focus:outline-none px-3 py-1 text-sm transition duration-150 ${searchBox ? 'block' : 'hidden'}`}
+            <ul className="flex relative space-x-5 text-xl items-center justify-center">
+                
+                      <input className={`rounded-md absolute z-40 right-16 top-6 sm:static focus:outline-none px-3 py-1 text-sm ${searchBox ? 'block' : 'hidden'}`}
                         placeholder="Search" type="text" />
-                </li>
+                
                 <li className="space-x-2 flex items-center justify-center">
                   
                     <button onClick={() => setSearchBox(!searchBox)}><FontAwesomeIcon  icon={faSearch} /></button></li>
