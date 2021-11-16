@@ -19,7 +19,7 @@ const Navbar = () => {
             </div>
 
             <div className="bg-green-500">
-                <div className="max-w-6xl mx-auto m">
+                <div className="max-w-6xl mx-auto ">
                     <div className={`flex px-4 transition duration-200 justify-${isOpen ? 'end' : 'between'}`}>
                         <div className="flex space-x-4 ">
                             <div className='flex space-x-3 items-center py-4'>
