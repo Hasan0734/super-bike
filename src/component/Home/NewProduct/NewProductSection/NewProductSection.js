@@ -9,6 +9,31 @@ import './NewProductSection.css'
 import NewProductCard from '../NewProductCard/NewProductCard';
 
 const NewProductSection = () => {
+    const options = {
+        items: 4,
+        margin:25,
+        nav:true,
+        navClass:['product-owl-prev focus:text-gray-700', 'product-owl-text focus:text-gray-700'],
+        navContainerClass:'product-owl-nav flex gap-1 text-3xl text-gray-400',
+        navText:["<i class='fas fa-reply'></i>", "<i class='fas fa-share'></i>"],
+        dots:false,
+        responsiveClass: true,
+        responsive: {
+            0:{
+                items:1
+            },
+            400:{
+                items: 2
+            },
+            600:{
+                items:4
+            },
+            1000: {
+                items: 4
+            }
+
+        }
+    }
 
     return (
         <div className="py-4 px-4">
@@ -26,22 +51,16 @@ const NewProductSection = () => {
                 {/* poroduct section  */}
                 <div className="px-3">
 
-                    <OwlCarousel className='owl-theme'
-                        items={4}
-                        margin={25}
-                        nav={true}
-                        navClass={['product-owl-prev hover:text-gray-700', 'product-owl-text hover:text-gray-700']}
-                        navContainerClass={'product-owl-nav flex gap-1 text-3xl text-gray-400'}
-                        navText={["<i class='fas fa-reply'></i>", "<i class='fas fa-share'></i>"]}
-                        dots={false}>
+                    <OwlCarousel className='owl-theme' {...options} >
+                      
 
                         {NewProducts.map(pd => <NewProductCard product={pd} key={pd.id}></NewProductCard>)}
-                    </OwlCarousel>
-                </div>
-
-
+                </OwlCarousel>
             </div>
+
+
         </div>
+        </div >
 
     );
 };

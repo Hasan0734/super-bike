@@ -7,21 +7,43 @@ import bannar2 from '../../../images/slider-2.jpg'
 import bannar4 from '../../../images/slider-4.jpg'
 import './Slider.css'
 const Slider = () => {
+  const options = {
+    loop: true,
+    autoplay: true,
+    autoPlaySpeed: 5000,
+    autoPlayTimeout: 5000,
+    autoplayHoverPause: true,
+
+
+    navContainerClass: 'header-owl-nav flex hidden  sm:flex',
+    navClass: ['header-owl-prev', 'header-owl-next'],
+    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+
+    items: 1,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        nav: false,
+        dots: true,
+        
+
+      },
+      400: {
+        nav: false,
+        dots: true,
+
+      },
+      600:{
+        nav: true,
+        dots: false
+      }
+
+    }
+
+  }
   return (
     <>
-      <OwlCarousel className='owl-theme'
-        loop={true}
-        autoplay={true}
-        autoPlaySpeed={5000}
-        autoPlayTimeout={5000}
-        autoplayHoverPause={true}
-        nav={true}
-        navContainerClass={'header-owl-nav'}
-        navText={["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]}
-        navClass={['header-owl-prev', 'header-owl-next']}
-        items={1}
-        margin={10}
-        dots={false}>
+      <OwlCarousel className='owl-theme' {...options}>
         <div className="">
           <div className="relative h-48 sm:h-auto flex items-center justify-center">
             <img className=" w-full h-full" src={bannar1} alt="" />
@@ -43,7 +65,7 @@ const Slider = () => {
             </div>
           </div>
         </div>
-        
+
         <div className=" ">
           <div className="relative h-48 sm:h-auto flex items-center justify-center">
             <img className=" w-full h-full" src={bannar4} alt="" />
