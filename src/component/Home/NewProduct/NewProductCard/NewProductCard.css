@@ -1,0 +1,15 @@
+.card-area .image-1 {
+    display: block !important;
+}
+
+.card-area .image-2 {
+    display: none !important;
+}
+
+.card-area:hover .image-1 {
+    display: none !important;
+}
+
+.card-area:hover .image-2 {
+    display: block !important;
+}

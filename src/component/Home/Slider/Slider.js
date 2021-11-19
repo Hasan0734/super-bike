@@ -11,12 +11,14 @@ const Slider = () => {
     <>
       <OwlCarousel className='owl-theme'
         loop={true}
-        // autoplay={true}
+        autoplay={true}
         autoPlaySpeed={5000}
         autoPlayTimeout={5000}
         autoplayHoverPause={true}
         nav={true}
+        navContainerClass={'header-owl-nav'}
         navText={["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]}
+        navClass={['header-owl-prev', 'header-owl-next']}
         items={1}
         margin={10}
         dots={false}>
@@ -41,6 +43,7 @@ const Slider = () => {
             </div>
           </div>
         </div>
+        
         <div className=" ">
           <div className="relative h-48 sm:h-auto flex items-center justify-center">
             <img className=" w-full h-full" src={bannar4} alt="" />
