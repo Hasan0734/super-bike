@@ -4,7 +4,7 @@ import SubMenu from '../SubMenu/SubMenu';
 const PrimaryNav = () => {
     return (
         <>
-            <ul className="hidden md:flex flex items-center space-x-4 text-white">
+            <ul className="hidden lg:flex  items-center space-x-4 md:space-x-2 text-white">
 
                 <li className="py-5">
                     <a className="py-5 px-2 hover:text-gray-600" href="#">Home</a>

@@ -12,7 +12,7 @@ const AboutSection = () => {
                         <img src={About} alt="" />
                     </div>
                     <div className="col-span-2 pt-10 sm:pt-0">
-                        <h1 className="text-2xl sm:text-6xl font-bold text-gray-700 font-sans">Best Adventure Tourer Bikes</h1>
+                        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-700 font-sans">Best Adventure Tourer Bikes</h1>
                         <p className="py-6 sm:py-11">Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable sourceand going through.
                         </p>
                         <div className="grid grid-cols-3 sm:gap-4 gap-3 max-w-sm">

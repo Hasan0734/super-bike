@@ -1,0 +1,40 @@
+.banner-img-1 {
+    background-image: url(../../../images//banner1.jpg);
+
+}
+
+.banner-img-2 {
+    background-image: url(../../../images//banner2.jpg);
+}
+
+.banner-img-1, .banner-img-2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+.bannerImg:before {
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    opacity: 0;
+    background: rgb(27 163 112 / 25%);
+    transform: scaleY(1);
+    transform-origin: 50%;
+    transition-property: transform;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-out;
+}
+
+.bannerImg:hover:before {
+    opacity: 1;
+    transform: scaleY(0);
+    
+}

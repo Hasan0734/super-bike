@@ -26,7 +26,7 @@ const NewProductSection = () => {
                 items: 2
             },
             600:{
-                items:4
+                items:3
             },
             1000: {
                 items: 4
@@ -36,7 +36,7 @@ const NewProductSection = () => {
     }
 
     return (
-        <div className="py-4 px-4">
+        <div className="p-4">
             <div className="max-w-6xl mx-auto">
                 {/* title section */}
 
@@ -49,7 +49,7 @@ const NewProductSection = () => {
                 </div>
 
                 {/* poroduct section  */}
-                <div className="px-3">
+                <div className="px-1">
 
                     <OwlCarousel className='owl-theme' {...options} >
                       
