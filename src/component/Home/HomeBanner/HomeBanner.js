@@ -3,7 +3,7 @@ import React from 'react';
 import './HomeBanner.css'
 const HomeBanner = () => {
     return (
-        <div className="p-4 mt-14">
+        <div className="p-4 my-14">
             <div className="max-w-6xl mx-auto">
                 <div className="grid sm:grid-cols-2 home-banner">
                     <div className="banner-img-1 h-36 sm:h-72">
