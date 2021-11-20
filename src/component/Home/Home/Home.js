@@ -5,6 +5,7 @@ import HeaderSlider from '../HeaderSlider/HeaderSlider';
 import HomeBanner from '../HomeBanner/HomeBanner';
 import Navbar from '../Navigation/Navbar/Navbar';
 import NewProductSection from '../NewProduct/NewProductSection/NewProductSection';
+import TestimonialSection from '../TestimonialSection/TestimonialSection';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <NewProductSection/>
             <HomeBanner/>
             <FeatureProductSection/>
+            <TestimonialSection/>
             <h1>this is home</h1>
         </>
     );
