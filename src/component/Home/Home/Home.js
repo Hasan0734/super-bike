@@ -3,6 +3,7 @@ import AboutSection from '../AboutSection/AboutSection';
 import FeatureProductSection from '../FeatureProduct/FeatureProductSection/FeatureProductSection';
 import HeaderSlider from '../HeaderSlider/HeaderSlider';
 import HomeBanner from '../HomeBanner/HomeBanner';
+import LatestNewsSection from '../LatestNewsSection/LatestNewsSection';
 import Navbar from '../Navigation/Navbar/Navbar';
 import NewProductSection from '../NewProduct/NewProductSection/NewProductSection';
 import TestimonialSection from '../TestimonialSection/TestimonialSection';
@@ -17,6 +18,7 @@ const Home = () => {
             <HomeBanner/>
             <FeatureProductSection/>
             <TestimonialSection/>
+            <LatestNewsSection/>
             <h1>this is home</h1>
         </>
     );

@@ -1,14 +1,16 @@
 import { faBiking } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { NewProducts } from '../NewProducts';
+
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import './NewProductSection.css'
-import NewProductCard from '../NewProductCard/NewProductCard';
+import './LatestNewsSection.css'
+import NewProductCard from '../NewProduct/NewProductCard/NewProductCard';
+import { LatestNews } from './LatestNews';
+import NewsCard from './NewsCard';
 
-const NewProductSection = () => {
+const LatestNewsSection = () => {
     const options = {
         items: 4,
         margin: 25,
@@ -23,45 +25,42 @@ const NewProductSection = () => {
                 items: 1
             },
             400: {
-                items: 2
+                items: 1
             },
             600: {
                 items: 3
             },
             1000: {
-                items: 4
+                items: 3
             }
 
         }
     }
 
     return (
-        <div className="p-4">
+        <div className="p-4 my-14">
             <div className="max-w-6xl mx-auto">
                 {/* title section */}
 
                 <div className="pb-5">
                     <div className="flex gap-2 text-3xl font-semibold">
                         <span className="text-green-400"><FontAwesomeIcon icon={faBiking} /></span>
-                        <sapn className="title">New Product</sapn>
+                        <sapn className="title">Latest News</sapn>
                     </div>
-
                 </div>
 
                 {/* poroduct section  */}
                 <div className="px-1">
 
                     <OwlCarousel className='owl-theme' {...options} >
-
-                        {NewProducts.map(pd => <NewProductCard product={pd} key={pd.id}></NewProductCard>)}
+                        {LatestNews.map(news => <NewsCard news={news} key={news.id}></NewsCard>)}
                     </OwlCarousel>
                 </div>
 
 
             </div>
         </div >
-
     );
 };
 
-export default NewProductSection;
+export default LatestNewsSection;
