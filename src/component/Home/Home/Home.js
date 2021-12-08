@@ -1,11 +1,13 @@
 import React from 'react';
 import AboutSection from '../AboutSection/AboutSection';
+import BrandSection from '../BrandSection/BrandSection';
 import FeatureProductSection from '../FeatureProduct/FeatureProductSection/FeatureProductSection';
 import HeaderSlider from '../HeaderSlider/HeaderSlider';
 import HomeBanner from '../HomeBanner/HomeBanner';
 import LatestNewsSection from '../LatestNewsSection/LatestNewsSection';
 import Navbar from '../Navigation/Navbar/Navbar';
 import NewProductSection from '../NewProduct/NewProductSection/NewProductSection';
+import NewsLetter from '../NewsLetter/NewsLetter';
 import TestimonialSection from '../TestimonialSection/TestimonialSection';
 
 const Home = () => {
@@ -19,6 +21,8 @@ const Home = () => {
             <FeatureProductSection/>
             <TestimonialSection/>
             <LatestNewsSection/>
+            <BrandSection />
+            <NewsLetter/>
             <h1>this is home</h1>
         </>
     );
