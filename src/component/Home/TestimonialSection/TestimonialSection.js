@@ -1,30 +1,30 @@
 import React from 'react';
 import testBanner from '../../../images/secoundbanner.jpg'
-import Testimonials from './Testimonials';
-import OwlCarousel from 'react-owl-carousel';
+// import Testimonials from './Testimonials';
+// import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-const testimonials = [
-    {
-        userImg: 'https://i.ibb.co/8s2z5H5/download.jpg',
-        userText: '"Majority have suffered alteration in aome from, by injected believable.into electronic typesetting, Lorem Ipsum is imply dummy text of the release of Letraset sheetpassage."',
-        userName: 'tony chester',
-        userTitle: 'Creative design'
-    },
-    {
-        userImg: 'https://i.ibb.co/8s2z5H5/download.jpg',
-        userText: '"Majority have suffered alteration in aome from, by injected believable.into electronic typesetting, Lorem Ipsum is imply dummy text of the release of Letraset sheetpassage."',
-        userName: 'tony chester',
-        userTitle: 'Creative design'
-    },
-    {
-        userImg: 'https://i.ibb.co/8s2z5H5/download.jpg',
-        userText: '"Majority have suffered alteration in aome from, by injected believable.into electronic typesetting, Lorem Ipsum is imply dummy text of the release of Letraset sheetpassage."',
-        userName: 'tony chester',
-        userTitle: 'Creative design'
-    },
+// const testimonials = [
+//     {
+//         userImg: 'https://i.ibb.co/8s2z5H5/download.jpg',
+//         userText: '"Majority have suffered alteration in aome from, by injected believable.into electronic typesetting, Lorem Ipsum is imply dummy text of the release of Letraset sheetpassage."',
+//         userName: 'tony chester',
+//         userTitle: 'Creative design'
+//     },
+//     {
+//         userImg: 'https://i.ibb.co/8s2z5H5/download.jpg',
+//         userText: '"Majority have suffered alteration in aome from, by injected believable.into electronic typesetting, Lorem Ipsum is imply dummy text of the release of Letraset sheetpassage."',
+//         userName: 'tony chester',
+//         userTitle: 'Creative design'
+//     },
+//     {
+//         userImg: 'https://i.ibb.co/8s2z5H5/download.jpg',
+//         userText: '"Majority have suffered alteration in aome from, by injected believable.into electronic typesetting, Lorem Ipsum is imply dummy text of the release of Letraset sheetpassage."',
+//         userName: 'tony chester',
+//         userTitle: 'Creative design'
+//     },
 
-]
+// ]
 
 const TestimonialSection = () => {
 
