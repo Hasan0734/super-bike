@@ -45,14 +45,12 @@ const NewProductSection = () => {
                         <span className="text-green-400"><FontAwesomeIcon icon={faBiking} /></span>
                         <sapn className="title">New Product</sapn>
                     </div>
-
                 </div>
 
                 {/* poroduct section  */}
                 <div className="px-1">
 
                     <OwlCarousel className='owl-theme' {...options} >
-
                         {NewProducts.map(pd => <NewProductCard product={pd} key={pd.id}></NewProductCard>)}
                     </OwlCarousel>
                 </div>
